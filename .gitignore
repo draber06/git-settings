@@ -1,0 +1,7 @@
+# Ignore everything...
+*
+# ... except preferences
+!.gitignore
+!.bash_profile
+!.bashrc
+!.gitconfig

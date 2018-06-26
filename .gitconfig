@@ -1,0 +1,42 @@
+[user]
+	name = Alexey Eremin
+	email = draber06@gmail.com
+[core]
+	editor = 'E:\\Sublime Text 3\\sublime_text.exe' -n -w
+	autocrlf = false
+	whitespace = cr-at-eol # To make the ^M disappear in git
+	pager = diff-so-fancy | less --tabs=4 -RFX # diff-so-fancy enable
+	#pager = diff-so-fancy | less --tabs=1,5 -R
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
+# shortcuts
+[alias] 
+	co = checkout
+	co = commit
+	br = branch
+	st = status
+	# A better git log 
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	last = log -1 --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+# diff-so-fancy settings C:\Users\Alexei\bin
+# diff-so-fancy strives to make your diff's human readable instead of machine readable. 
+# This helps improve code quality and help you spot defects faster
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red
+	oldHighlight = red 52
+	newNormal = green
+	newHighlight = green 22
+[color "diff"]
+	meta = yellow
+	frag = magenta 
+	commit = yellow 
+	old = red
+	new = green 
+	whitespace = red reverse
