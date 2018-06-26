@@ -1,0 +1,1 @@
+Syncronizing git and git bash settings
