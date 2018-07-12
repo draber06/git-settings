@@ -22,6 +22,7 @@
 	# A better git log 
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	last = log -1 --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	alias = config --get-regexp ^alias\\.
 
 # diff-so-fancy settings C:\Users\Alexei\bin
 # diff-so-fancy strives to make your diff's human readable instead of machine readable. 
